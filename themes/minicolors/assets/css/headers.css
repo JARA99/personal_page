@@ -1,0 +1,23 @@
+.h1_header {
+    text-align: right;
+    font-size: 44px;
+    padding: 0;
+    margin: 0;
+  }
+
+.h2_header {
+  text-align: right;
+  font-size: 22px;
+  font-variant-caps: petite-caps;
+  padding: 0;
+  margin: 0;
+}
+
+
+.profile_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  align-content: center;
+}
+

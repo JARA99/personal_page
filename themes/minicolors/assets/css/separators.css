@@ -1,0 +1,39 @@
+.separator_center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .separator_center::before,
+  .separator_center::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+  }
+  
+  .separator_center:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator_center:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+
+
+
+  .separator_left {
+    display: flex;
+    /* align-items: center; */
+    /* text-align: center; */
+  }
+  
+  .separator_left::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+  }
+  
+  .separator_left:not(:empty)::after {
+    margin-left: .25em;
+  }

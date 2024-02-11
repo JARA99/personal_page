@@ -1,0 +1,9 @@
+<div class="flex_containter_1">
+    <!-- <img src="{{ .Params.img }}" alt="img.png"> -->
+    <div>
+        <h1 class="roboto-regular header_format">{{ .Title }}</h1>
+        <h2 class="roboto-thin header_format">{{ .Params.subtitle }}</h2>
+    </div>
+</div>
+
+{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
