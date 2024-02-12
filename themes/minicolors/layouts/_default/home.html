@@ -3,7 +3,7 @@
   {{ .Content }}
 
   <!-- Range throw content -->
-  {{ range site.RegularPages }}
+  <!-- {{ range site.RegularPages }}
     <div>
       <h2 class="center_align">
         <a href="{{ .RelPermalink }}">
@@ -18,6 +18,24 @@
         {{ .Summary }}
       </span>
     </div>
-  {{ end }}
+  {{ end }} -->
+
+  <!-- Range throw subpages -->
+  <!-- {{ range .Sections }}
+    <div>
+      <h2 class="center_align">
+        <a href="{{ .RelPermalink }}">
+          <span class="{{ .Params.color }}">
+            {{- substr .LinkTitle 0 3 -}}
+          </span><span class="c0">
+            {{- substr .LinkTitle 3 -}}
+          </span>
+        </a>
+      </h2>
+      <span class="{{ .Params.color }}">
+        {{ .Summary }}
+      </span>
+    </div>
+  {{ end }} -->
 
 {{ end }}

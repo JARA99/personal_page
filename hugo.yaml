@@ -1,11 +1,8 @@
-baseURL: https://example.org/
+baseURL: https://jara99.github.io/personal_page/
 languageCode: en-us
 title: My New Hugo Site
 theme: 'minicolors'
 
-params:
-  subtitle: 'Testing theming'
-  img: 'static/profile.jpg'
 
 # menus:
 #   main:
