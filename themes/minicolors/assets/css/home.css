@@ -1,0 +1,86 @@
+.menu_div {
+    --lmargin: 4em;
+    --rmargin: 15em;
+    --tmargin: 3em;
+
+    width: calc(50% - var(--lmargin) - var(--rmargin));
+    /* padding: 4em; */
+    padding: var(--tmargin) var(--rmargin) 0 var(--lmargin);
+}
+
+.name_div {
+    --lmargin: 0em;
+    --rmargin: 0em;
+    --tmargin: 4em;
+
+    width: calc(50% - var(--lmargin) - var(--rmargin));
+    /* padding: 4em; */
+    padding: var(--tmargin) var(--rmargin) 0 var(--lmargin);
+}
+
+.subname_div {
+    --lmargin: 0em;
+    --rmargin: 0em;
+    --tmargin: 0em;
+
+    width: calc(50% - var(--lmargin) - var(--rmargin));
+    /* padding: 4em; */
+    padding: var(--tmargin) var(--rmargin) 0 var(--lmargin);
+}
+
+h1.home {
+    font-size: 100px;
+    line-height: 1em;
+    font-weight: 700;
+
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2.home {
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+}

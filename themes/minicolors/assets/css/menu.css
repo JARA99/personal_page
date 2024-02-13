@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+/* .menu_font {
+    font-size: larger;
+} */

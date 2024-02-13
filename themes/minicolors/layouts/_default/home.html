@@ -1,41 +1,30 @@
 {{ define "main" }}
 
-  {{ .Content }}
+  {{ $title_words := split .Title " " }}
+  {{ $subtitle_words := split .Params.subtitle " " }}
 
-  <!-- Range throw content -->
-  <!-- {{ range site.RegularPages }}
-    <div>
-      <h2 class="center_align">
-        <a href="{{ .RelPermalink }}">
-          <span class="{{ .Params.color }}">
-            {{- substr .LinkTitle 0 3 -}}
-          </span><span class="c0">
-            {{- substr .LinkTitle 3 -}}
-          </span>
-        </a>
-      </h2>
-      <span class="{{ .Params.color }}">
-        {{ .Summary }}
-      </span>
+  <div class="flex_containter_4">
+    <!-- <div class="name_div">
+    </div> -->
+    <div class="name_div">
+      <h1 class="home">
+      {{ range $title_words }}
+        {{ . }} <br>
+      {{ end }}
+      </h1>
     </div>
-  {{ end }} -->
+  </div>
 
-  <!-- Range throw subpages -->
-  <!-- {{ range .Sections }}
-    <div>
-      <h2 class="center_align">
-        <a href="{{ .RelPermalink }}">
-          <span class="{{ .Params.color }}">
-            {{- substr .LinkTitle 0 3 -}}
-          </span><span class="c0">
-            {{- substr .LinkTitle 3 -}}
-          </span>
-        </a>
+  <div class="flex_containter_4">
+    <!-- <div class="subname_div">
+    </div> -->
+    <div class="subname_div">
+      <h2 class="home">
+        {{ .Params.subtitle }}
       </h2>
-      <span class="{{ .Params.color }}">
-        {{ .Summary }}
-      </span>
     </div>
-  {{ end }} -->
+  </div>
+
+  <!-- {{ .Content }} -->
 
 {{ end }}

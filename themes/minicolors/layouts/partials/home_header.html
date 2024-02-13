@@ -1,34 +1,3 @@
-<!-- Split the title in light and bold -->
-{{ $title_words := split .Title " " }}
-{{ $title_words_amnt := $title_words | len }}
-{{ $title_black_words := div $title_words_amnt 2 }}
-{{ $title_black_words := math.Floor $title_black_words }}
-
-<div class="flex_containter_1">
-    <img src="{{ .Params.img }}" alt="img.png" class="profile_img">
-    <div class="flex_containter_2">
-        <h1 class="h1_header">
-            <span class="roboto-bold h1_header">
-                {{ range first $title_black_words $title_words }}
-                    {{ . }}
-                {{ end }}
-            </span>
-            <span class="roboto-thin h1_header">
-                {{ range after $title_black_words $title_words }}
-                    {{ . }}
-                {{ end }}
-            </span>
-        </h1>
-        <h2 class="roboto-regular h2_header {{ .Params.color }}">
-            {{ .Params.subtitle }}
-        </h2>
-    </div>
-</div>
-
-<div class="center_align top_menu">
+<div class="menu_div">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>
-<!-- 
-<div>
-    {{ $title_words }} , {{ $title_words_amnt }} , {{ $title_black_words }}
-</div> -->

@@ -4,14 +4,25 @@ title: My New Hugo Site
 theme: 'minicolors'
 
 
-# menus:
-#   main:
-#   - name: Products
-#     pageRef: /products
-#     # weight: 10
-  
-#   - name: Experience
-#     pageRef: /experience
+menus:
+  main:
+  - name: About
+    pageRef: /About
+    weight: 10
 
-#   - name: Skills
-#     pageRef: /skills
+    Params:
+      color: "c1"
+
+  - name: Projects
+    pageRef: /Projects
+    weight: 20
+        
+    Params:
+      color: "c2"
+  
+  - name: Experience
+    pageRef: /Experience
+    weight: 30
+        
+    Params:
+      color: "c3"

@@ -1,9 +1,11 @@
 +++
-title = 'Something'
+title = 'About'
 date = 2023-01-01T08:00:00-07:00
 draft = false
 weight = 5
 color = 'c1'
 +++
 
-Texto en some some.md en content.
+Texto en some About.md en content.
+
+![](profile.jpg)
