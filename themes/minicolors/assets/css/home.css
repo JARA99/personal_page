@@ -9,38 +9,37 @@
 }
 
 .name_div {
-    width: auto;
-    display: flex;
-    justify-content: left;
-    margin: 2em 0px;
-    
+  width: auto;
+  display: flex;
+  justify-content: left;
+  margin: 2em 0px;
 }
 
 .subname_div {
-    width: auto;
-    display: flex;
-    justify-content: left;
-    margin: 2em 0px;
+  width: auto;
+  display: flex;
+  justify-content: left;
+  margin: 2em 0px;
 }
 
 h1.home {
-    font-size: calc( (4vw + 5vh) + 1rem );
-    line-height: 1em;
+  font-size: calc( (4vw + 5vh) + 1rem );
+  line-height: 1em;
 
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 
-    margin: 0;
+  margin: 0;
     
 }
 
 h2.home {
-    font-size: calc( (1vw + 2vh) + 0.5rem );
-    line-height: 1em;
-    font-weight: 400;
+  font-size: calc( (1vw + 2vh) + 0.5rem );
+  line-height: 1em;
+  font-weight: 400;
 
-    margin: 0;
+  margin: 0;
 }
 
 .center{
@@ -58,26 +57,13 @@ h2.home {
   height: 90vh;
 }
 
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-  /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
+/* Portrait ----------- */
 @media only screen 
 and (max-width : 590px) {
   .flex_containter_name {
     flex-direction: column-reverse;
     align-items: center;
   }
-  /* .menu_div {
-    align-self: flex-end;
-  }
-  .name_group_div {
-    align-self: flex-start;
-  } */
   .name_div{
     justify-content: center;
   }
@@ -88,33 +74,4 @@ and (max-width : 590px) {
     text-align: center;
   }
   
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-  /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-  /* Styles */
 }

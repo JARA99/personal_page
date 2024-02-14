@@ -41,14 +41,12 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <span>
-      <a class="{{ .Params.color }} menu_items"
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-          {{- end }}
-        {{- end -}}
-      >{{ $name }}</a>
-    </span>
+    <a class="{{ .Params.color }} menu_items"
+      {{- range $k, $v := $attrs }}
+        {{- with $v }}
+          {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+        {{- end }}
+      {{- end -}}
+    >{{ $name }}</a>
   {{- end }}
 {{- end }}

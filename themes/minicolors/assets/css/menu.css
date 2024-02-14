@@ -6,7 +6,8 @@
     align-items: flex-end;
     /* gap: 8vw; */
 
-    font-size: larger;
+    flex-wrap: wrap;
+
     text-transform: uppercase;
 
 }
@@ -24,6 +25,9 @@
 and (max-width : 590px) {
     .menu {
         flex-direction: row;
-        gap: 8vw;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh 5vw;
+        width: 50vw;
     }
 }
