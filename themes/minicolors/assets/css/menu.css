@@ -18,3 +18,12 @@
 /* .menu_font {
     font-size: larger;
 } */
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 590px) {
+    .menu {
+        flex-direction: row;
+        gap: 8vw;
+    }
+}

@@ -69,13 +69,23 @@ and (min-width : 321px) {
 @media only screen 
 and (max-width : 590px) {
   .flex_containter_name {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
-  .menu_div {
+  /* .menu_div {
     align-self: flex-end;
   }
   .name_group_div {
     align-self: flex-start;
+  } */
+  .name_div{
+    justify-content: center;
+  }
+  .subname_div {
+    justify-content: center;
+  }
+  .home {
+    text-align: center;
   }
   
 }
