@@ -1,11 +1,19 @@
 .menu {
+    /* width: 50vw; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 8vw;
 
     font-size: larger;
     text-transform: uppercase;
+
+    padding: 25px 35px;
+}
+
+.menu_items {
+    font-size: calc( (4vw + 5vh) * 0.1 + 1rem );
 }
 
 /* .menu_font {

@@ -22,3 +22,12 @@
     flex-direction: row;
     justify-content: right;
 }
+
+
+.flex_containter_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
+}

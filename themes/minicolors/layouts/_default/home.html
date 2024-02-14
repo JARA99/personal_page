@@ -3,26 +3,26 @@
   {{ $title_words := split .Title " " }}
   {{ $subtitle_words := split .Params.subtitle " " }}
 
-  <div class="flex_containter_4">
-    <!-- <div class="name_div">
-    </div> -->
-    <div class="name_div">
-      <h1 class="home">
-      {{ range $title_words }}
-        {{ . }} <br>
-      {{ end }}
-      </h1>
-    </div>
-  </div>
+  <div class="flex_containter_name">
 
-  <div class="flex_containter_4">
-    <!-- <div class="subname_div">
-    </div> -->
-    <div class="subname_div">
-      <h2 class="home">
-        {{ .Params.subtitle }}
-      </h2>
+    <div class="name_group_div">
+      
+      <div class="name_div">
+        <h1 class="home">
+        {{ range $title_words }}
+          {{ . }} <br>
+        {{ end }}
+        </h1>
+      </div>
+
+      <div class="name_div">
+        <h2 class="home">
+          {{ .Params.subtitle }}
+        </h2>
+      </div>
+      
     </div>
+
   </div>
 
   <!-- {{ .Content }} -->
