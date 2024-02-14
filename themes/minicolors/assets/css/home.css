@@ -67,7 +67,7 @@ and (min-width : 321px) {
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 550px) {
+and (max-width : 590px) {
   .flex_containter_name {
     flex-direction: column;
   }
