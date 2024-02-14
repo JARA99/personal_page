@@ -14,7 +14,7 @@
 
 .name_group_div {
   width: auto;
-  margin: 0px 15vw 0px 0px;
+  /* margin: 0px 15vw 0px 0px; */
 }
 
 .name_div {
@@ -25,13 +25,10 @@
 }
 
 .subname_div {
-    --lmargin: 0em;
-    --rmargin: 0em;
-    --tmargin: 0em;
-
-    width: calc(50% - var(--lmargin) - var(--rmargin));
-    /* padding: 4em; */
-    padding: var(--tmargin) var(--rmargin) 0 var(--lmargin);
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin: 2em 0px;
 }
 
 h1.home {
@@ -43,6 +40,7 @@ h1.home {
     font-style: normal;
 
     margin: 0;
+    
 }
 
 h2.home {

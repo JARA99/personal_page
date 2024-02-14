@@ -5,6 +5,10 @@
 
   <div class="flex_containter_name">
 
+    <div class="">
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+
     <div class="name_group_div">
       
       <div class="name_div">
@@ -15,7 +19,7 @@
         </h1>
       </div>
 
-      <div class="name_div">
+      <div class="subname_div">
         <h2 class="home">
           {{ .Params.subtitle }}
         </h2>
